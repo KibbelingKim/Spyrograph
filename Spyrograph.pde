@@ -27,8 +27,9 @@ float yw3;
 float fw3;
 
 void setup() {
-  size(3360, 1080);
- // fullScreen();
+  size (1600, 900);
+  // size(3360, 1080);
+  // fullScreen();
   frameRate(60);
   noFill();
 }
@@ -38,33 +39,33 @@ void draw() {
 
   strokeWeight(0.8);
   stroke (255, 200);
-  //ellipse(3*(width/16), height/9, width/16, height/9);
-  //ellipse(5*(width/16), height/9, width/16, height/9);
-  //ellipse(7*(width/16), height/9, width/16, height/9);
-  //ellipse(width/16, 2.5*(height/9), width/16, height/9);
-  //ellipse(width/16, 4*(height/9), width/16, height/9);
-  //ellipse(width/16, 5.5*(height/9), width/16, height/9);
+  ellipse(3*(width/16), height/9, width/16, height/9);
+  ellipse(5*(width/16), height/9, width/16, height/9);
+  ellipse(7*(width/16), height/9, width/16, height/9);
+  ellipse(width/16, 2.5*(height/9), width/16, height/9);
+  ellipse(width/16, 4*(height/9), width/16, height/9);
+  ellipse(width/16, 5.5*(height/9), width/16, height/9);
 
-  //ellipse(3*(width/16), 7*(height/9), width/16, height/9);
-  //ellipse(5*(width/16), 7*height/9, width/16, height/9);
-  //ellipse(7*(width/16), 7*height/9, width/16, height/9);
-  //ellipse(8.5*(width/16), 2.5*(height/9), width/16, height/9);
-  //ellipse(8.5*(width/16), 4*(height/9), width/16, height/9);
-  //ellipse(8.5*(width/16), 5.5*(height/9), width/16, height/9);
+  ellipse(3*(width/16), 7*(height/9), width/16, height/9);
+  ellipse(5*(width/16), 7*height/9, width/16, height/9);
+  ellipse(7*(width/16), 7*height/9, width/16, height/9);
+  ellipse(8.5*(width/16), 2.5*(height/9), width/16, height/9);
+  ellipse(8.5*(width/16), 4*(height/9), width/16, height/9);
+  ellipse(8.5*(width/16), 5.5*(height/9), width/16, height/9);
 
-  line(2.5*(width/16), height/9, 3.5*(width/16), height/9);
-  line(4.5*(width/16), height/9, 5.5*(width/16), height/9);
-  line(6.5*(width/16), height/9, 7.5*(width/16), height/9);
-  line(2.5*(width/16), 7*(height/9), 3.5*(width/16), 7*(height/9));
-  line(4.5*(width/16), 7*(height/9), 5.5*(width/16), 7*(height/9));
-  line(6.5*(width/16), 7*(height/9), 7.5*(width/16), 7*(height/9));
+  //line(2.5*(width/16), height/9, 3.5*(width/16), height/9);
+  //line(4.5*(width/16), height/9, 5.5*(width/16), height/9);
+  //line(6.5*(width/16), height/9, 7.5*(width/16), height/9);
+  //line(2.5*(width/16), 7*(height/9), 3.5*(width/16), 7*(height/9));
+  //line(4.5*(width/16), 7*(height/9), 5.5*(width/16), 7*(height/9));
+  //line(6.5*(width/16), 7*(height/9), 7.5*(width/16), 7*(height/9));
 
-  line(width/16, 2*(height/9), width/16, 3*(height/9));
-  line(width/16, 3.5*(height/9), width/16, 4.5*(height/9));
-  line(width/16, 5*(height/9), width/16, 6*(height/9));
-  line(8.5*(width/16), 2*(height/9), 8.5*(width/16), 3*(height/9));
-  line(8.5*(width/16), 3.5*(height/9), 8.5*(width/16), 4.5*(height/9));
-  line(8.5*(width/16), 5*(height/9), 8.5*(width/16), 6*(height/9));
+  //line(width/16, 2*(height/9), width/16, 3*(height/9));
+  //line(width/16, 3.5*(height/9), width/16, 4.5*(height/9));
+  //line(width/16, 5*(height/9), width/16, 6*(height/9));
+  //line(8.5*(width/16), 2*(height/9), 8.5*(width/16), 3*(height/9));
+  //line(8.5*(width/16), 3.5*(height/9), 8.5*(width/16), 4.5*(height/9));
+  //line(8.5*(width/16), 5*(height/9), 8.5*(width/16), 6*(height/9));
 
   fn1 = ((PI/60)*1.5);
   fn2 = ((PI/60)/1.25);
@@ -135,36 +136,42 @@ void draw() {
 
   strokeWeight(5);
   stroke(255, 0, 0, 200);
-  //point(xn1, yn1);
-  //point(xn2, yn2);
-  //point(xn3, yn3);
+  point(xn1, yn1);
+  point(xn2, yn2);
+  point(xn3, yn3);
+  point(xw1, yw1);
+  point(xw2, yw2);
+  point(xw3, yw3);
 
-  //point(xw1, yw1);
-  //point(xw2, yw2);
-  //point(xw3, yw3);
+  point(xn1, yn1 + 6*(height/9));
+  point(xn2, yn2 + 6*(height/9));
+  point(xn3, yn3 + 6*(height/9));
+  point(xw1 + 7.5*(width/16), yw1);
+  point(xw2 + 7.5*(width/16), yw2);
+  point(xw3 + 7.5*(width/16), yw3);
 
-  point(xn1, (height/9));
-  point(xn2, (height/9));
-  point(xn3, (height/9));
-  point(xn1, 7*(height/9));
-  point(xn2, 7*(height/9));
-  point(xn3, 7*(height/9));
+  //point(xn1, (height/9));
+  //point(xn2, (height/9));
+  //point(xn3, (height/9));
+  //point(xn1, 7*(height/9));
+  //point(xn2, 7*(height/9));
+  //point(xn3, 7*(height/9));
 
-  point((width/16), yw1);
-  point((width/16), yw2);
-  point((width/16), yw3);
-  point(8.5*(width/16), yw1);
-  point(8.5*(width/16), yw2);
-  point(8.5*(width/16), yw3);
+  //point((width/16), yw1);
+  //point((width/16), yw2);
+  //point((width/16), yw3);
+  //point(8.5*(width/16), yw1);
+  //point(8.5*(width/16), yw2);
+  //point(8.5*(width/16), yw3);
 
   stroke (255, 0, 0, 100);
   strokeWeight(1);
-  line(xn1, (height/9), xn1, 7*(height/9));
-  line(xn2, (height/9), xn2, 7*(height/9));
-  line(xn3, (height/9), xn3, 7*(height/9));
-  line((width/16), yw1, 8.5*(width/16), yw1);
-  line((width/16), yw2, 8.5*(width/16), yw2);
-  line((width/16), yw3, 8.5*(width/16), yw3);
+  //line(xn1, (height/9), xn1, 7*(height/9));
+  //line(xn2, (height/9), xn2, 7*(height/9));
+  //line(xn3, (height/9), xn3, 7*(height/9));
+  //line((width/16), yw1, 8.5*(width/16), yw1);
+  //line((width/16), yw2, 8.5*(width/16), yw2);
+  //line((width/16), yw3, 8.5*(width/16), yw3);
 
   //line(xn1, yw1, xn1, yw3);
   //line(xn1, yw1, xn3, yw1);
@@ -172,6 +179,13 @@ void draw() {
   //line(xn3, yw1, xn3, yw3);
   //line(xn1, yw2, xn3, yw2);
   //line(xn1, yw3, xn3, yw3);
+
+  line(xn1, yn1, xn1, yn1 + 6*(height/9));
+  line(xn2, yn2, xn2, yn2 + 6*(height/9));
+  line(xn3, yn3, xn3, yn3 + 6*(height/9));
+  line(xw1, yw1, xw1 + 7.5*(width/16), yw1);
+  line(xw2, yw2, xw2 + 7.5*(width/16), yw2);
+  line (xw3, yw3, xw3 + 7.5*(width/16), yw3);
 
   strokeWeight(3);
   stroke(255, 0, 0, 255);
